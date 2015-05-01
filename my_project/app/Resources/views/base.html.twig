@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script src="{{ asset('js/javascript.js') }}"></script>
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top">
+            <!-- put your nav bar here -->Test
+        </nav>
+        <div class="container">
+            {% block body '' %}
+        </div>
+        {% block javascripts %}
+            <script src="//code.jquery.com/jquery-2.1.1.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+            </script>
+        {% endblock %}        
+    </body>
+</html>
